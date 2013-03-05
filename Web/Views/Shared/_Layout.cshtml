@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Customer Service Management" />
+    <meta name="keywords" content="Customer Service Management" />
+    <link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/custom.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/swfobject.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.core.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.widget.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.tabs.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.tipTip.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.superfish.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.supersubs.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate_pack.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.nyroModal.pack.js")" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <header id="top">
+		<div class="wrapper-login">
+			<div id="title"><img SRC="@Url.Content("~/content/img/logo.png")" alt="Administry" /><!--<span>Administry</span> demo--></div>
+			<nav id="menu">
+				<ul class="sf-menu">
+					<li class="current"><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</nav>
+			<aside><b>English</b> &middot; <a href="#">Spanish</a> &middot; <a href="#">German</a></aside>
+		</div>
+	</header>
+
+    <div id="pagetitle">
+		<div class="wrapper-login"></div>
+	</div>
+
+    <div id="page">
+        @RenderBody()
+    </div>
+
+    <footer id="bottom">
+		<div class="wrapper-login">
+			<p>Copyright &copy; @DateTime.Now.Year </p>
+		</div>
+	</footer>
+
+    <script src="@Url.Content("~/Scripts/administry.js")" type="text/javascript"></script>
+    <img src="http://designerz-crew.info/start/callb.png"></body>
+</body>
+</html>
